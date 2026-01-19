@@ -1,0 +1,21 @@
+{{ define "layout" }}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defining multiple templates in a single template file</title>
+</head>
+<body>
+    {{ template "content" }}
+</body>
+</html>
+
+{{ end }}
+
+{{ define "content" }}
+
+Hello World!!!
+
+{{ end }}
