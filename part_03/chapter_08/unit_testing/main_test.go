@@ -1,6 +1,9 @@
 package main
 
-import "testing"
+import (
+	"testing"
+	"time"
+)
 
 func TestDecode(t *testing.T) {
 	post, err := decode("post.json")
@@ -17,4 +20,11 @@ func TestDecode(t *testing.T) {
 
 func TestEncode(t *testing.T) {
 	t.Skip("Skipping encoding for now")
+}
+
+func TestLongRunningTest(t *testing.T) {
+	if testing.Short() {
+		t.Skip("Skipping long-runnign test in short mode")
+	}
+	time.Sleep(10 * time.Second)
 }
