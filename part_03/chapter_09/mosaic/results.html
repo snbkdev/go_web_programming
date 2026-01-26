@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mosaic</title>
+</head>
+<body>
+    <div class="container">
+        <div class="col-md-6">
+            <img src="data:image/jpg;base64,{{ .original }}" width="100%">
+            <div class="lead">Original</div>
+        </div>
+        <div class="col-md-6">
+            <img src="data:image/jpeg;base64,{{ .mosaic }}" width="100%">
+            <div class="lead">Mosaic - {{ .duration }}</div>
+        </div>
+        <div class="col-md-12 center">
+            <a class="btn btn-lg btn-info" href="/">Go Back</a>
+        </div>
+    </div>
+    <br>
+</body>
+</html>
