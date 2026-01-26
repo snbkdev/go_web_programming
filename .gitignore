@@ -24,3 +24,11 @@ go.work
 .env
 part_01/chapter_02/chichat/.env
 part_02/chapter_06/crud_example/.env
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+._*
