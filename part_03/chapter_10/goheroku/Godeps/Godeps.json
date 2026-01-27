@@ -1,0 +1,11 @@
+{
+    "ImportPath": "github.com/user_name/project_name",
+    "GoVersion": "go1.25.3",
+    "Deps": [
+        {
+            "ImportPath": "github.com/lib/pq",
+            "Comment": "go1.0-cutoff-31ga33d605",
+            "Rev": "a33d6053e025943d5dc89dfa1f35f35500618df7"
+        }
+    ]
+}
